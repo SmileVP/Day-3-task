@@ -1,15 +1,26 @@
 //Question 1:
-a)For in
-var arr={
-    "name":"Vishnupriya",
-    "age":"24"
-};
-for(var key in arr){
-    console.log(key,arr[key]);
-}
-b)For loop
 
-var res=[{"name":"Balaji","age":"21"},{"name":"LathaSampath","age":"22"}];
-for(let i=0;i<res.length;i++){
-    console.log(res[i].name+" "+res[i].age);
+let a=[{"name":"Vishnupriya","dept":"B.com"},{"name":"Balaji","dept":"B.E"}];
+
+//for loop
+for (let i=0;i<a.length;i++){
+    console.log(a[i].name+" "+a[i].dept);
+   
+}
+
+// for in
+for(var key in a){
+    
+console.log(key,a[key].name+" "+a[key].dept);
+
+}
+
+//for each
+a.forEach(ele=>{
+    console.log(ele.name+" "+ele.dept); 
+});
+
+// for of
+for (const el of a) {
+  console.log(el.name+" "+el.dept);
 }
