@@ -1,12 +1,13 @@
 Question 2:
 
-var resume={
+var myresume={
    "name":"Vishnupriya",
    "age":"24",
    "qualification":"B.com",
    "mobile":"9080376729",
    "experience":"2 years"
 };
+console.log(myresume);
 
 Question 3:Difference between window, document and screen
 
